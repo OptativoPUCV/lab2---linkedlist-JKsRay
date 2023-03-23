@@ -34,3 +34,13 @@ Thu 23 Mar 2023 01:01:14 AM UTC:
  tests:  0|6
 total_score: 0/70
 4d53de2
+Thu 23 Mar 2023 01:56:14 AM UTC: 
+ list.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:3: error: expected ‘,’ or ‘;’ before ‘if’
+   34 |   if(v == NULL) EXIT_FAILURE;
+      |   ^~
+Compilation failed
+55f6842
