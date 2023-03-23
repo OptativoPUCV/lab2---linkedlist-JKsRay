@@ -219,3 +219,19 @@ Thu 23 Mar 2023 03:05:41 AM UTC:
  tests:  9|3
 total_score: 35/70
 b1a028e
+Thu 23 Mar 2023 03:12:19 AM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:96:10: error: ‘newData’ undeclared (first use in this function)
+   96 |   list * newData = createnode(data);
+      |          ^~~~~~~
+list.c:96:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:96:20: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   96 |   list * newData = createnode(data);
+      |                    ^~~~~~~~~~
+      |                    createNode
+cc1: all warnings being treated as errors
+Compilation failed
+b3ea9e6
