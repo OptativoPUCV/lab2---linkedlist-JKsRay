@@ -171,3 +171,16 @@ Thu 23 Mar 2023 02:58:07 AM UTC:
  tests:  2|5
 total_score: 15/70
 8a91aa2
+Thu 23 Mar 2023 03:00:44 AM UTC: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:66:31: error: expected ‘;’ before ‘}’ token
+   66 |     return list->current->data
+      |                               ^
+      |                               ;
+   67 | }
+      | ~                              
+Compilation failed
+b1b9767
