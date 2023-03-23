@@ -136,6 +136,7 @@ void pushCurrent(List * list, void * data) {
 
     list->current->next = nuevoNodo;
     list->current = nuevoNodo;
+    nuevoNodo->prev = list->head;
       
   }
   
