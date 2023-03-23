@@ -166,7 +166,7 @@ void * popCurrent(List * list) {
   }
   else
   {
-    list->tail = list->current->head;
+    list->tail = list->current;
   }
   
   return list->current->data;
